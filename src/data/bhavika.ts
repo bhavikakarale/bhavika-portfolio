@@ -14,6 +14,6 @@ export const portfolio = {
   {period:"2024",company:"Adobe",role:"Software & Data Engineer Intern",detail:"Built automated ETL pipelines and a scalable JIRA ingestion service to improve operational visibility."},
   {period:"2022 — 2023",company:"Persistent Systems",role:"Software Engineer",detail:"Worked across search performance, React experimentation, observability, and testing infrastructure."},
  ], education:["M.S. Data Science · Syracuse University · 2023–2025","B.E. Computer Engineering · Savitribai Phule Pune University · 2017–2022"],
- graph:{nodes:["Computer Engineering","Software Engineer","Data Science","Adobe Intern","SDE II","AI & automation"],edges:[[0,1],[0,2],[1,3],[2,3],[3,4],[4,5]] as [number,number][]},
+ graph:{nodes:["B.E. Computer Engineering","Persistent Systems","M.S. Data Science · Syracuse","Adobe Software & Data Engineer Intern","Adobe Software Engineer II"],edges:[[0,1],[1,2],[2,3],[3,4]] as [number,number][]},
  grounding:["Bhavika is a software engineer based in the United States (PST).","She is an SDE II at Adobe and previously worked at Persistent Systems.","Her public work includes Speech to Code, an e-commerce microservices project, and an AWS portfolio platform.","Her skills include TypeScript, React, Node.js, Python, Java, FastAPI, Spring Boot, SQL, Playwright, AWS, and LLM/NLP automation."],
 };
