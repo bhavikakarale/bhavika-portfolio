@@ -15,5 +15,12 @@ export const portfolio = {
   {period:"2022 — 2023",company:"Persistent Systems",role:"Software Engineer",detail:"Worked across search performance, React experimentation, observability, and testing infrastructure."},
  ], education:["M.S. Data Science · Syracuse University · 2023–2025","B.E. Computer Engineering · Savitribai Phule Pune University · 2017–2022"],
  graph:{nodes:["B.E. Computer Engineering","Persistent Systems","M.S. Data Science · Syracuse","Adobe Software & Data Engineer Intern","Adobe Software Engineer II"],edges:[[0,1],[1,2],[2,3],[3,4]] as [number,number][]},
+ milestones:[
+  {short:"B.E.",title:"B.E. Computer Engineering",meta:"Savitribai Phule Pune University · 2017–2022",note:"The engineering foundation: systems thinking, software design, and problem-solving."},
+  {short:"Persistent",title:"Persistent Systems",meta:"Software Engineer · 2022–2023",note:"Her first full-time engineering role, spanning search performance, React experimentation, observability, and testing infrastructure."},
+  {short:"M.S. Data",title:"M.S. Data Science",meta:"Syracuse University · 2023–2025",note:"Expanded from software engineering into data systems, machine learning, and applied analytics."},
+  {short:"Adobe intern",title:"Adobe internship",meta:"Software & Data Engineer Intern · 2024",note:"Built ETL automation and a scalable JIRA-ingestion service for operational visibility."},
+  {short:"Adobe SDE II",title:"Adobe",meta:"Software Engineer II · 2025–present",note:"Building automation platforms, AI-assisted workflows, and dependable data systems."},
+ ],
  grounding:["Bhavika is a software engineer based in the United States (PST).","She is an SDE II at Adobe and previously worked at Persistent Systems.","Her highest education is an M.S. in Data Science from Syracuse University (2023–2025).","Her public contact email is bhavika.hireme@gmail.com. Her LinkedIn is linkedin.com/in/bhavika-karale and GitHub is github.com/bhavikakarale.","Her public work includes Speech to Code, an e-commerce microservices project, and an AWS portfolio platform.","Her skills include TypeScript, React, Node.js, Python, Java, FastAPI, Spring Boot, SQL, Playwright, AWS, and LLM/NLP automation."],
 };
