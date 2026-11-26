@@ -12,13 +12,13 @@ const prompts = ["Tell me about yourself", "How can I contact you?", "What is yo
 const logos = {
   Adobe: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Adobe_logo_and_wordmark_%282017%29.svg/3840px-Adobe_logo_and_wordmark_%282017%29.svg.png",
   "Persistent Systems": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Persistent_Systems_Logo.svg/3840px-Persistent_Systems_Logo.svg.png",
+  "Syracuse University": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Syracuse_Orange_logo.svg/1920px-Syracuse_Orange_logo.svg.png",
 };
 
 function SectionLabel({ children }: { children: React.ReactNode }) { return <p className="mono text-[11px] font-medium uppercase tracking-[.12em] text-[#64706c]">{children}</p>; }
 function Pill({ children }: { children: React.ReactNode }) { return <span className="mono rounded-full border border-[#d9d8d0] px-3 py-1 text-[11px] text-[#52605a]">{children}</span>; }
 
 function Mark({ name }: { name: "Adobe" | "Persistent Systems" | "Syracuse University" | "Savitribai Phule Pune University" }) {
-  if (name === "Syracuse University") return <div aria-label="Syracuse University logo" className="flex h-14 w-14 items-center justify-center rounded-xl bg-[#f76900] font-serif text-4xl font-bold text-white">S</div>;
   if (name === "Savitribai Phule Pune University") return <div aria-label="Savitribai Phule Pune University logo" className="flex h-14 w-14 items-center justify-center rounded-xl border border-[#b98535] bg-[#f4ead4] text-center font-serif text-[11px] font-bold leading-3 text-[#6e4c1a]">SPPU</div>;
   return <div className="flex h-14 w-32 items-center justify-center rounded-xl border border-[#e2e0d8] bg-white p-3"><Image src={logos[name]} alt={`${name} logo`} width={112} height={44} className="h-full w-full object-contain" /></div>;
 }
