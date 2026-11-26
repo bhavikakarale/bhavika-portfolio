@@ -22,7 +22,7 @@ function GitHubIcon() { return <svg aria-hidden="true" viewBox="0 0 24 24" class
 function SocialLink({ href, label, icon }: { href: string; label: string; icon: React.ReactNode }) { return <a href={href} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 underline decoration-[#d85d3f] underline-offset-4 transition hover:text-[#315d51]">{icon}{label} <span aria-hidden="true">↗</span></a>; }
 
 function Mark({ name }: { name: "Adobe" | "Persistent Systems" | "Syracuse University" | "Savitribai Phule Pune University" }) {
-  if (name === "Savitribai Phule Pune University") return <div aria-label="Savitribai Phule Pune University logo" className="flex h-14 w-14 items-center justify-center rounded-xl border border-[#b98535] bg-[#f4ead4] text-center font-serif text-[11px] font-bold leading-3 text-[#6e4c1a]">SPPU</div>;
+  if (name === "Savitribai Phule Pune University") return <div className="flex h-14 w-20 items-center justify-center rounded-xl border border-[#e2e0d8] bg-white p-1"><Image src="/images/sppu-logo.png" alt="Savitribai Phule Pune University logo" width={72} height={54} className="h-full w-full object-contain" /></div>;
   return <div className="flex h-14 w-32 items-center justify-center rounded-xl border border-[#e2e0d8] bg-white p-3"><Image src={logos[name]} alt={`${name} logo`} width={112} height={44} className="h-full w-full object-contain" /></div>;
 }
 
