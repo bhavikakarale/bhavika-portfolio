@@ -3,7 +3,9 @@
 * { box-sizing:border-box; } html { scroll-behavior:smooth; } body { margin:0; background:var(--paper); color:var(--ink); font-family:var(--font-sans),sans-serif; } a { color:inherit; text-decoration:none; } button,input { font:inherit; } ::selection { background:#f2c3a8; } .display { font-family:var(--font-serif),Georgia,serif; letter-spacing:-.045em; } .mono { font-family:var(--font-mono),monospace; letter-spacing:-.03em; } .grain { background-image:radial-gradient(rgba(23,33,31,.15) .65px,transparent .65px); background-size:7px 7px; } @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } *,*:before,*:after { animation-duration:.01ms !important; transition-duration:.01ms !important; } }
 
 /* The DSA view owns the full editorial measure; the system lab keeps one focused canvas. */
-#lab > div > div > article:nth-child(2) { display:none; }
-#lab > div > div { grid-template-columns:minmax(0, 1fr); }
+#lab > div > h2, #lab > div > p, #lab > div > div { display:none; }
+#lab > div > article { margin-top:0; border-color:#759187; background:#20342e; }
+#lab > div > article h3 { font-size:clamp(2.8rem,6vw,5rem); }
+#experience [class*="items-end"] > span { display:none; }
 #top a:first-child { color:#fff; }
 @media (min-width:768px) { #experience [class*="border-y"] { margin-left:-57%; width:157%; } }
